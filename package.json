@@ -1,6 +1,6 @@
 {
   "name": "anim-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vanilla custom elements implementation of some animated SVG icons. You can import each icon based on your need.",
   "main": "index.js",
   "scripts": {
