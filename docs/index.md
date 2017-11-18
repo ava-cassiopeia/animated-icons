@@ -15,10 +15,10 @@ project.
 
 ## Icons
 
-[Icons Demo](/icons)
+[Icons Demo](/animated-icons/icons)
 
 Each icon has unique configuration information and APIs that you can use to 
 color them and change parts of their animations. See the icon demo link above 
 to preview each icon, or see below for more specific information on each icon.
 
-  - [like-heart](/icons/like-heart)
+  - [like-heart](/animated-icons/icons/like-heart)
