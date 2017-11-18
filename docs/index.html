@@ -1,1 +1,64 @@
-Hello, world!
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <title>Animated Icons</title>
+
+        <style>
+            :root {
+                --like-heart-anim-offset: 0ms;
+            }
+
+            .icon-wrapper {
+                font-size: 20px;
+                background: #eee;
+                border-radius: 4px;
+                padding: 15px;
+                box-sizing: border-box;
+                border: 2px solid #eee;
+                outline: none;
+            }
+
+            .icon-wrapper:focus {
+                border: 2px solid lightskyblue;
+            }
+
+            .icon-wrapper .icon {
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button class="icon-wrapper">
+                <icon-like-heart class="icon"></icon-like-heart>
+                <div>
+                    like-heart
+                </div>
+            </button>
+        </div>
+        
+        <!-- icons -->
+        <script src="https://raw.githubusercontent.com/aeolingamenfel/animated-icons/master/like-heart.js"></script>
+        <script>
+            (function() {
+                const buttons = document.querySelectorAll(".icon-wrapper");
+                let button = null;
+
+                for(let x = 0; x < buttons.length; x++) {
+                    button = buttons[x];
+
+                    button.addEventListener("click", function() {
+                        const icon = this.querySelector(".icon");
+
+                        if(icon.finishedAnimating) {
+                            icon.reset();
+                        } else {
+                            icon.animate();
+                        }
+                    });
+                }
+            })();
+        </script>
+    </body>
+</html>
