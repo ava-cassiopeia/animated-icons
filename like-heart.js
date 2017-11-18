@@ -16,6 +16,10 @@ template.innerHTML = `
             transition-delay: calc(var(--like-heart-anim-offset, 700ms) + (var(--like-heart-click-speed, 300ms) / 2));
         }
 
+        line.cls-2 {
+            stroke: var(--like-heart-line-color, #000);
+        }
+
         path {
             transform-origin: center;
         }
@@ -95,15 +99,17 @@ template.innerHTML = `
         
             50% {
                 transform: scale(0.75);
+                fill: #000;
             }
         
             100% {
                 transform: scale(1);
+                fill: var(--like-heart-heart-color, #000);
             }
         }        
     </style>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" class="icon"><defs><style>.cls-1{fill:#282d33;}.cls-2{fill:none;stroke:#282d33;stroke-width:5px;}</style></defs><title>Like Heart Icon</title><g id="Layer_2" data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M92.65,75.12l2-2a19,19,0,0,0,0-26.86l-.28-.28a19,19,0,0,0-26.86,0l-2,2-2-2a19,19,0,0,0-26.86,0l-.28.28a19,19,0,0,0,0,26.86l2,2,27.14,27.14Z"/><line class="cls-2" x1="64.01" x2="64.01" y2="13.4"/><line class="cls-2" x1="31.64" y1="9.2" x2="38.34" y2="20.81"/><line class="cls-2" x1="8.21" y1="33.36" x2="19.81" y2="40.06"/><line class="cls-2" y1="65.99" x2="13.4" y2="65.99"/><line class="cls-2" x1="9.21" y1="98.36" x2="20.81" y2="91.66"/><line class="cls-2" x1="33.36" y1="121.79" x2="40.06" y2="110.18"/><line class="cls-2" x1="65.99" y1="130" x2="65.99" y2="116.6"/><line class="cls-2" x1="130" y1="64" x2="116.6" y2="64"/><line class="cls-2" x1="120.79" y1="31.64" x2="109.19" y2="38.34"/><line class="cls-2" x1="96.64" y1="8.21" x2="89.94" y2="19.81"/><polygon class="cls-2" points="119.94 94.02 101.3 87.69 82.65 81.37 88.98 100.02 95.3 118.66 99.8 106.9 112.4 119.5 120.78 111.12 108.18 98.52 119.94 94.02"/></g></g></svg>    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" class="icon"><defs><style>.cls-1{fill:#282d33;}.cls-2{fill:none;stroke:#282d33;stroke-width:5px;}</style></defs><title>Like Heart Icon</title><g id="Layer_2" data-name="Layer 2"><g id="Icons"><line class="cls-2" x1="64.01" x2="64.01" y2="13.4"/><line class="cls-2" x1="31.64" y1="9.2" x2="38.34" y2="20.81"/><line class="cls-2" x1="8.21" y1="33.36" x2="19.81" y2="40.06"/><line class="cls-2" y1="65.99" x2="13.4" y2="65.99"/><line class="cls-2" x1="9.21" y1="98.36" x2="20.81" y2="91.66"/><line class="cls-2" x1="33.36" y1="121.79" x2="40.06" y2="110.18"/><line class="cls-2" x1="65.99" y1="130" x2="65.99" y2="116.6"/><line class="cls-2" x1="130" y1="64" x2="116.6" y2="64"/><line class="cls-2" x1="120.79" y1="31.64" x2="109.19" y2="38.34"/><line class="cls-2" x1="96.64" y1="8.21" x2="89.94" y2="19.81"/><path class="cls-1" d="M92.65,75.12l2-2a19,19,0,0,0,0-26.86l-.28-.28a19,19,0,0,0-26.86,0l-2,2-2-2a19,19,0,0,0-26.86,0l-.28.28a19,19,0,0,0,0,26.86l2,2,27.14,27.14Z"/><polygon class="cls-2" points="119.94 94.02 101.3 87.69 82.65 81.37 88.98 100.02 95.3 118.66 99.8 106.9 112.4 119.5 120.78 111.12 108.18 98.52 119.94 94.02"/></g></g></svg>    
 `;
 
 /**
