@@ -13,6 +13,16 @@ See the [GitHub readme](https://github.com/aeolingamenfel/animated-icons) for
 more information on installing and setting up the icons to be used in your 
 project.
 
+## Triggering Animation
+
+Unless otherwise noted, icons do not animate automatically. Instead, you can 
+trigger the animation by either adding the `animate` attribute to the icon 
+element, **or** by calling the `.animate()` method on a reference to the icon
+element.
+
+In addition, you can reset the animation by removing the attribute or calling
+the `.reset()` method on a reference to the icon element.
+
 ## Icons
 
 [Icons Demo](/animated-icons/icons)

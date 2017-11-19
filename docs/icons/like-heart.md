@@ -4,7 +4,8 @@ title: Like Heart Icon
 # Like Heart Icon
 
 **Import:** `import "anim-icons/like-heart";`<br />
-**Tag:** `<icon-like-heart>`
+**Tag:** `<icon-like-heart>`<br />
+**Since:** v0.1.0
 
 This is a simple animated icon that shows a mouse clicking on a heart, which 
 shows exploding lines around it after being "clicked". 

@@ -11,6 +11,10 @@
                 --like-heart-line-color: orange;
             }
 
+            .icon-list {
+                display: flex;
+            }
+
             .icon-wrapper {
                 font-size: 20px;
                 background: #eee;
@@ -19,6 +23,8 @@
                 box-sizing: border-box;
                 border: 2px solid #eee;
                 outline: none;
+                flex: 0 0 150px;
+                margin: 0 10px;
             }
 
             .icon-wrapper:focus {
@@ -31,7 +37,7 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="icon-list">
             <button class="icon-wrapper">
                 <icon-like-heart class="icon"></icon-like-heart>
                 <div>

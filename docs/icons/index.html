@@ -11,6 +11,11 @@
                 --like-heart-line-color: orange;
             }
 
+            .icon-list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
             .icon-wrapper {
                 font-size: 20px;
                 background: #eee;
@@ -19,6 +24,8 @@
                 box-sizing: border-box;
                 border: 2px solid #eee;
                 outline: none;
+                flex: 0 0 150px;
+                margin: 0 10px;
             }
 
             .icon-wrapper:focus {
@@ -31,17 +38,24 @@
         </style>
     </head>
     <body>
-        <div>
+        <div class="icon-list">
             <button class="icon-wrapper">
                 <icon-like-heart class="icon"></icon-like-heart>
                 <div>
                     like-heart
                 </div>
             </button>
+            <button class="icon-wrapper">
+                <icon-code class="icon"></icon-code>
+                <div>
+                    code
+                </div>
+            </button>
         </div>
         
         <!-- icons -->
         <script src="https://rawgit.com/aeolingamenfel/animated-icons/master/like-heart.js"></script>
+        <script src="https://rawgit.com/aeolingamenfel/animated-icons/master/code.js"></script>
         <script>
             (function() {
                 const buttons = document.querySelectorAll(".icon-wrapper");
