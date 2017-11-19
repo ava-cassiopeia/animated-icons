@@ -4,7 +4,7 @@ title: Code Icon
 # Code Icon
 
 **Import:** `import "anim-icons/code";`<br />
-**Tag:** `<icon-code></icon-code>`
+**Tag:** `<icon-code></icon-code>`<br />
 **Since:** 0.2.0
 
 This is an icon in which it shows a computer monitor, and animates in a little
