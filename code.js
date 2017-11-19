@@ -32,7 +32,7 @@ class IconCode extends HTMLElement {
                 }
 
                 .animate polyline:nth-of-type(1) {
-                    animation: leftCarrot 600ms ease forwards;
+                    animation: leftCarrot var(--icon-code-speed, 600ms) ease forwards;
                 }
 
                 /* right carrot */
@@ -41,14 +41,14 @@ class IconCode extends HTMLElement {
                 }
 
                 .animate polyline:nth-of-type(2) {
-                    animation: rightCarrot 600ms ease forwards;
+                    animation: rightCarrot var(--icon-code-speed, 600ms) ease forwards;
                 }
 
                 /* dividing line/forwardslash */
                 line:nth-of-type(2) {
-                    transition: opacity 300ms ease,
-                        transform 300ms ease;
-                    transition-delay: 300ms;
+                    transition: opacity calc(var(--icon-code-speed, 600ms) / 2) ease,
+                        transform calc(var(--icon-code-speed, 600ms) / 2) ease;
+                    transition-delay: calc(var(--icon-code-speed, 600ms) / 2);
                     transform-origin: center;
                 }
 
@@ -88,7 +88,7 @@ class IconCode extends HTMLElement {
                     }
                 }
             </style>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 114.56"><defs><style>.cls-1{fill:#282d33;}.cls-1,.cls-2{stroke:#282d33;stroke-width:5px;}.cls-2{fill:none;}</style></defs><title>icon-website</title><g id="Layer_2" data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M125,2.5H6A3.47,3.47,0,0,0,2.5,6V80.54h126V6A3.48,3.48,0,0,0,125,2.5Zm-6.53,67.84H12.35V12.63H118.48Z"/><path class="cls-2" d="M2.51,80.47V91.22c0,2.06,2.08,4.36,4.12,4.36H125.25c2,0,3.25-2.12,3.25-4.18V80.47Z"/><path class="cls-2" d="M51.49,95.66c-.22,2.67.25,8.62-.32,11.52-.52,2.66-.88,2.75-2.28,3.53-.79.44-2.12,1-3.23,1.53h0"/><path class="cls-2" d="M85.21,112.27c-1.12-.49-2.47-1.11-3.27-1.55-1.39-.78-1.67-.87-2.19-3.53-.57-2.91-.1-8.7-.32-11.38"/><line class="cls-2" x1="42.21" y1="112.04" x2="88.81" y2="112.04"/><polyline class="cls-2" points="52.09 55.38 44.22 49.07 36.34 42.77 44.22 36.46 52.09 30.15"/><polyline class="cls-2" points="78.91 55.38 86.78 49.07 94.66 42.77 86.78 36.46 78.91 30.16"/><line class="cls-2" x1="71.69" y1="23.07" x2="60.33" y2="62.46"/></g></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 114.56"><defs><style>.cls-1{fill:#282d33;}.cls-1,.cls-2{stroke:#282d33;stroke-width:5px;}.cls-2{fill:none;}</style></defs><title>Code Icon</title><g id="Layer_2" data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M125,2.5H6A3.47,3.47,0,0,0,2.5,6V80.54h126V6A3.48,3.48,0,0,0,125,2.5Zm-6.53,67.84H12.35V12.63H118.48Z"/><path class="cls-2" d="M2.51,80.47V91.22c0,2.06,2.08,4.36,4.12,4.36H125.25c2,0,3.25-2.12,3.25-4.18V80.47Z"/><path class="cls-2" d="M51.49,95.66c-.22,2.67.25,8.62-.32,11.52-.52,2.66-.88,2.75-2.28,3.53-.79.44-2.12,1-3.23,1.53h0"/><path class="cls-2" d="M85.21,112.27c-1.12-.49-2.47-1.11-3.27-1.55-1.39-.78-1.67-.87-2.19-3.53-.57-2.91-.1-8.7-.32-11.38"/><line class="cls-2" x1="42.21" y1="112.04" x2="88.81" y2="112.04"/><polyline class="cls-2" points="52.09 55.38 44.22 49.07 36.34 42.77 44.22 36.46 52.09 30.15"/><polyline class="cls-2" points="78.91 55.38 86.78 49.07 94.66 42.77 86.78 36.46 78.91 30.16"/><line class="cls-2" x1="71.69" y1="23.07" x2="60.33" y2="62.46"/></g></g></svg>
         `;
 
         IconCode.__template = template;
